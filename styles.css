@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/formbg2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.cwh {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.container {
+    height: 80vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    font-size: 30px;
+    width: 300px;
+    background: linear-gradient(110deg, #37015c 45%, #7e55de 55%);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.pp {
+    text-align: center;
+}
+
+.pp img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: solid;
+}
+
+.input-box {
+    margin: 20px 0;
+}
+
+input {
+    width: 85%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+input::placeholder {
+    color: white;
+}
+
+#submitbtn {
+    width: 75%;
+    border: none;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.topbtns {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#showform, #showtable, #clearData {
+    background-color: #7e55de;
+    color: white;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.ft {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+#table {
+    display: block;
+    margin-top: 20px;
+    color: white;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    color: white;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: #7e55de;
+}
+
+@media (max-width: 768px) {
+    .cwh {
+        font-size: 30px;
+    }
+
+    .container {
+        height: auto;
+        padding: 20px;
+    }
+
+    .form-box {
+        width: 80%;
+        font-size: 24px;
+    }
+
+    .topbtns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #showform, #showtable, #clearData {
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .pp img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cwh {
+        font-size: 24px;
+    }
+
+    .form-box {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .topbtns {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #submitbtn {
+        width: 100%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+

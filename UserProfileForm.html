@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="topbtns">
+        <button id="showform">Display Form</button>
+        <button id="showtable">Display Table</button>
+    </div>
+    <div class="cwh" id="formsection" style="display: none" >
+        <h2>User Profile Form</h2>
+    <div class="container">
+        <div class="form-box">
+            <div class="pp">
+                <img src="img/user.png" alt="User">
+            </div>
+            Signup Here
+            <form id="form">
+            <div class="input-box">
+                <input id="username" type="text" placeholder="&#x263A;  Username" required/>
+            </div>
+            <div class="input-box">
+                <input id="password" type="password" placeholder="&#128274;  Password" 
+                minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password must contain at least one number,
+                one uppercase letter, one lowercase letter and atleast 8 characters."required/>
+            </div>
+            <div class="input-box" >
+                <input id="email" type="Email" placeholder="&#x2709;  Email" required/>
+            </div>
+            <div class="input-box" >
+                <input id="phnum" type="text" placeholder="&#x260F;  +91" pattern="^\d{10}$" maxlength="10"
+                title="Phone number must be exactly 10 digits" required/>
+            </div>
+            <button type="submit" id="submitbtn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <div id="table" style="display: none">
+        <button id="clearData">Clear Data</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+    </div>
+    <script src="input.js"></script>
+    <!-- <footer class="ft">&copy2021 User Profile Form. All Rights Reserved</footer> -->
+</body>
+</html>
